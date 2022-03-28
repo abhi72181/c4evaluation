@@ -1,7 +1,7 @@
 const express=require("express")
 const app=express()
 app.use(express.json())
-todoController=require("./controllers/Todo.controller")
+const todoController=require("./controllers/Todo.controller")
 const {register,login}=require("./controllers/auth.controller")
 
 app.post("/register",register)
